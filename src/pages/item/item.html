@@ -1,0 +1,21 @@
+<!--
+  Generated template for the Item page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content>
+
+<img src="assets/images/background.jpg">
+<h1>{{ product.title }}</h1>
+<p>{{ product.description }}</p>
+<p>{{ product.price }}
+<form>
+	<label>Order Quantity</label>
+	<input type="number" name="quantity" [(ngModel)]="product.quantity">
+	<button (click)="addToCart()" type="submit" ion-button>Add to Cart</button>
+</form>
+
+<button (click)="close()" ion-button>Cancel</button>
+</ion-content>

@@ -1,0 +1,33 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Products</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+	
+	<h2 style="text-align:center;">{{ title }}</h2>
+	<ion-grid>
+		<ion-row>
+			<ion-col width-50 *ngFor="let product of products">
+				<ion-card (click)="itemPage( index, product )">
+				<img src="assets/images/background.jpg">
+				<div padding>
+					<h4>{{ product.title }}</h4>
+					<p>N {{ product.price }}</p>
+				</div>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+
+	</ion-grid>
+
+	<ion-fab color="secondary" bottom right padding>
+	  	<ion-badge item-right color="secondary" style="border-radius:100%;">{{ totalCartItems }}</ion-badge>
+   		<button ion-fab color="danger"><img src="assets/images/shopping-cart.png" width="50%"></button>
+ 	</ion-fab>
+
+</ion-content>

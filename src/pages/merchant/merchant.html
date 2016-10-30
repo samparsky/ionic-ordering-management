@@ -1,0 +1,38 @@
+
+<ion-header color="primary">
+	<ion-toolbar color="primary">
+	  <ion-title>Merchants</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+
+	<ion-card (click)="productsPage(0)" style="background-color:#388E3C; padding:40px;">
+			<h1 style="color:#fefefe;">Nestle Group</h1>
+	</ion-card>
+
+	<ion-card (click)="productsPage(1)" style="background-color:#ffa000;padding:40px;">
+		<h1 style="color:#fefefe;">Dangote Group</h1>
+	</ion-card>
+
+	<ion-card (click)="productsPage(2)" style="background:#9c27b0;padding:40px;">
+		<h1 style="color:#fefefe;">Mobile Group</h1>
+	</ion-card>
+
+	<ion-card (click)="productsPage(3)" style="background:#03a9f4;padding:40px;">
+		<h1 style="color:#fefefe;">Chevron Group</h1>
+	</ion-card>
+
+	<ion-card (click)="productsPage(4)" style="background:#E91e63;padding:40px;">
+		<h1 style="color:#fefefe;">Total Group</h1>
+	</ion-card>
+
+	<ion-fab color="secondary" bottom right padding>
+		<ion-badge item-right color="secondary" style="border-radius:100%;margin:0px;">{{ totalCartItems }}</ion-badge>
+   		<button ion-fab color="danger" (click)="cart()" style="margin:0px;"><img src="assets/images/shopping-cart.png" width="50%"></button>
+ 	</ion-fab>
+
+
+</ion-content>
