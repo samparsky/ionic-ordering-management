@@ -14,31 +14,31 @@ export class ProductService {
 	public products = [
 		[
 			{
-				title : "Bag of Cement", picture: "cement.jpg", description : "A bag of cememnt", price : 50
+				title : "Tin of Milk", picture: "cement.jpg", description : "A 450g tin of milk.", price : 50
 			},
 		],
 		
 		[
 			{
-				title : "Bag of Powder", picture: "cement.jpg", description : "A bag of cememnt", price : 50
+				title : "Bag of Cement", picture: "cement.jpg", description : "A bag of cement", price : 80
 			},
 		],
 
 		[
 			{
-				title : "Bag of Topic", picture: "cement.jpg", description : "A bag of cememnt", price : 50
+				title : "Litre of Petrol", picture: "cement.jpg", description : "A litre of mobile petrol", price : 100
 			},
 		],
 
 		[
 			{
-				title : "Bag of power", picture: "cement.jpg", description : "A bag of cememnt", price : 50
+				title : "Litre of Kerosene", picture: "cement.jpg", description : "A litre of chevron kerosene.", price : 150
 			},
 		],
 
 		[
 			{
-				title : "Bag of mind", picture: "cement.jpg", description : "A bag of cememnt", price : 50
+				title : "Litre of diesel", picture: "cement.jpg", description : "A litre of total diesel.", price : 200
 			},
 		],
 

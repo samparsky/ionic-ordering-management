@@ -6,16 +6,20 @@
 -->
 
 <ion-content>
-
 <img src="assets/images/background.jpg">
+<div padding>
 <h1>{{ product.title }}</h1>
 <p>{{ product.description }}</p>
-<p>{{ product.price }}
+<p>Price : N {{ product.price }}</p>
 <form>
-	<label>Order Quantity</label>
-	<input type="number" name="quantity" [(ngModel)]="product.quantity">
+	<ion-item>
+		<ion-label>Order Quantity</ion-label>
+		<ion-input type="number" name="quantity" [(ngModel)]="product.quantity"></ion-input>
+	</ion-item>
+	<div style="margin-bottom:20px;"></div>
 	<button (click)="addToCart()" type="submit" ion-button>Add to Cart</button>
 </form>
-
 <button (click)="close()" ion-button>Cancel</button>
+
+</div>
 </ion-content>
